@@ -1,0 +1,28 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "A test automation framework with cypress and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deharteloos/cypress-automation-framework.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "automation"
+  ],
+  "author": "Deharteloos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deharteloos/cypress-automation-framework/issues"
+  },
+  "homepage": "https://github.com/Deharteloos/cypress-automation-framework#readme",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  }
+}

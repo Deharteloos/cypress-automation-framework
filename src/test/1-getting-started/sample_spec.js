@@ -1,7 +1,7 @@
 describe('Users actions on web app', () => {
     it('Authenticate successfully', () => {
         cy.visit('/fr')
-        //cy.get('#didomi-notice-agree-button').click()
+        cy.get('#didomi-notice-agree-button').click()
         cy.get('.js-myaccount-link').trigger('mouseenter')
         cy.get('.js-myaccount-panel').should('be.visible')
         cy.get('a').contains("S'identifier").click()

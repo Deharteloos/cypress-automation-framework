@@ -1,5 +1,15 @@
 {
     "baseUrl": "https://lacoste.com",
+    "downloadsFolder": "target/downloads",
+    "screenshotsFolder": "target/screenshots",
+    "videosFolder": "target/videos",
+    "fixturesFolder": "src/test/resources/fixtures",
+    "integrationFolder": "src/test",
+    "pluginsFile": "src/main/plugins/index.js",
+    "supportFile": "src/main/support/index.js",
+    "ignoreTestFiles": "*.hot-update.js",
+    "testFiles": "**/*.*",
     "viewportWidth": 1366,
-    "viewportHeight": 768
+    "viewportHeight": 768,
+    "scrollBehavior": "center"
 }

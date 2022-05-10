@@ -104,7 +104,8 @@ dist
 .tern-port
 
 # Cypress Asset Files
-cypress/downloads/
-cypress/screenshots/
-cypress/videos
+target/
+
+#VS CODE
+.vscode/
 

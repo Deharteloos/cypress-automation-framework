@@ -9,12 +9,12 @@ class LoginPage extends Page {
     passwordInput = '#signin_signup-password'
     connectionBtn = '#signin_signup-signin'
 
-    enterEmail() {
-        this.set(this.emailInput, data.email, {force: true})
+    enterEmail(email) {
+        this.set(this.emailInput, email, {force: true})
     }
 
-    enterPassword() {
-        this.set(this.passwordInput, data.password, {force: true})
+    enterPassword(password) {
+        this.set(this.passwordInput, password, {force: true})
     }
 
     clickOnContinueBtn() {

@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/Deharteloos/cypress-automation-framework#readme",
   "devDependencies": {
-    "cypress": "^9.6.1"
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "src/test/steps"
   }
 }

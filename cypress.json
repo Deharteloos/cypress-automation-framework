@@ -8,7 +8,7 @@
     "pluginsFile": "src/main/plugins/index.js",
     "supportFile": "src/main/support/index.js",
     "ignoreTestFiles": "*.hot-update.js",
-    "testFiles": "**/*.*",
+    "testFiles": "resources/features/**/*.feature",
     "viewportWidth": 1366,
     "viewportHeight": 768,
     "scrollBehavior": "center"

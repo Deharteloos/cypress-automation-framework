@@ -109,3 +109,4 @@ target/
 #VS CODE
 .vscode/
 
+src/main/pageObjects/data.json

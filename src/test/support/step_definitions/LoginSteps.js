@@ -1,5 +1,5 @@
-import { Then, And } from "cypress-cucumber-preprocessor/steps"
-import LoginPage from "../../main/pageObjects/LoginPage"
+import { Then, And } from "@badeball/cypress-cucumber-preprocessor"
+import LoginPage from "../../../main/pageObjects/LoginPage"
 
 const loginPage = new LoginPage()
 

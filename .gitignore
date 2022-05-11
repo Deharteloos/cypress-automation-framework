@@ -103,10 +103,11 @@ dist
 # TernJS port file
 .tern-port
 
-# Cypress Asset Files
+# Cypress Asset and Generated Files
 target/
 
 #VS CODE
 .vscode/
 
-src/main/pageObjects/data.json
+#Cucumber related
+*.ndjson

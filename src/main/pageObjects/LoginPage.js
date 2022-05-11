@@ -1,7 +1,5 @@
 import Page from "./Page";
 
-const data = require('./data.json')
-
 class LoginPage extends Page {
 
     emailInput = '#signin_signup-email'

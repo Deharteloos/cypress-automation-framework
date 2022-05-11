@@ -4,6 +4,7 @@ class HomePage extends Page {
     
     homePageEndPoint = '/fr'
     
+    cookiesPopup = '#didomi-popup'
     cookiesOkBtn = '#didomi-notice-agree-button'
     accountBtn = '.js-myaccount-link'
     accountPanel = '.js-myaccount-panel'
@@ -14,7 +15,10 @@ class HomePage extends Page {
     }    
     
     acceptsCookies() {
-        this.clickOn(this.cookiesOkBtn)
+        if(!cy.getCookie('didomi_token'))
+        {
+            this.clickOn(this.cookiesOkBtn)
+        }
     }
 
     hoverOnAccountBtn() {

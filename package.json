@@ -23,11 +23,20 @@
   },
   "homepage": "https://github.com/Deharteloos/cypress-automation-framework#readme",
   "devDependencies": {
-    "cypress": "^9.6.1",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "@badeball/cypress-cucumber-preprocessor": "^9.1.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^9.6.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "src/test/steps"
+    "stepDefinitions": [
+      "src/test/resources/features/[filepath]/**/*.{js,ts}",
+      "src/test/resources/features/[filepath].{js,ts}",
+      "src/test/support/step_definitions/**/*.{js,ts}"
+    ],
+    "json": {
+      "enabled": true,
+      "output": "target/cucumber-report.json"
+    }
   }
 }

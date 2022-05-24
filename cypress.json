@@ -11,5 +11,10 @@
     "testFiles": "**/*.feature",
     "viewportWidth": 1366,
     "viewportHeight": 768,
-    "scrollBehavior": "center"
+    "scrollBehavior": "center",
+    "reporter": "mocha-allure-reporter",
+    "reporterOptions": {
+        "targetDir": "target/allure-results"
+    },
+    "video": false
 }
